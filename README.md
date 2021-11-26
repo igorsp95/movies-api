@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Endpoints:
 
-Things you may want to cover:
+'/': import CSV file
+'/api/v1/movies': read JSON api
 
-* Ruby version
+Filters:
 
-* System dependencies
+'/api/v1/movies?release_year=:release_year' to filter by year
+'/api/v1/movies?genre=:genre' genre filter
+'/api/v1/movies?country=:country' country filter
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To CSV file be imported successfully, change the header 'type' to 'genre'.

@@ -21,18 +21,16 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'listen', '~> 3.2'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'capybara'
-  gem 'webdrivers', require: !ENV['SELENIUM_REMOTE_URL']
-  gem 'selenium-webdriver'
-  gem 'launchy'
+  gem 'rspec-rails', '~> 5.0.0'
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
+  gem 'listen', '~> 3.2'
+  gem 'spring'
   gem 'web-console', '>= 3.3.0'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'rubocop', require: false
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 end
 
