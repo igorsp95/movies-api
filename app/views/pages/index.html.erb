@@ -1,5 +1,17 @@
-<h1>Csv file</h1>
-<%= form_tag import_movies_path, action: 'import', multipart: true, remote: true do |f| %>
-  <%= file_field_tag :file, accept: 'text/csv' %>
-  <%= submit_tag "Import CSV", style:"color: blue;" %>
-<% end %>
+<div class="container">
+  <h1>Importar Arquivo CSV</h1>
+  <%= form_tag import_movies_path, action: 'import', multipart: true, remote: true do |f| %>
+    <%= file_field_tag :file, accept: 'text/csv' %>
+    <br>
+    <%= submit_tag "Import CSV", class: "btn" %>
+  <% end %>
+  <br>
+  <%= link_to "Ver arquivo JSON", movies_path, class: "btn-2" %>
+</div>
+
+<script>
+  document.querySelector(".btn").addEventListener("click", function() {
+    display_btn = document.querySelector(".btn-2")
+    display_btn.style.visibility = "visible";
+  });
+</script>

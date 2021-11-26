@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: "pages#index", as: "pages"
+  root to: "pages#index"
 
   scope module: :api do
     scope module: :v1 do
