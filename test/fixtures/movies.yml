@@ -2,7 +2,7 @@
 
 one:
   show_id: MyString
-  type: 
+  genre: MyString
   title: MyString
   director: MyString
   cast: MyString
@@ -16,7 +16,7 @@ one:
 
 two:
   show_id: MyString
-  type: 
+  genre: MyString
   title: MyString
   director: MyString
   cast: MyString

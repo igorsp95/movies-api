@@ -2,6 +2,11 @@ require_relative 'boot'
 
 require 'rails/all'
 require "csv"
+require 'webdrivers'
+require 'webdrivers/chromedriver'
+require 'webdrivers/geckodriver'
+require 'webdrivers/iedriver'
+require 'webdrivers/edgedriver'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

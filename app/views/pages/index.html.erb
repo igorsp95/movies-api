@@ -1,12 +1,12 @@
 <div class="container">
-  <h1>Importar Arquivo CSV</h1>
-  <%= form_tag import_movies_path, action: 'import', multipart: true, remote: true do |f| %>
+  <h1>Load your CSV file to import</h1>
+  <%= form_tag import_api_v1_movies_path, action: 'import', multipart: true, remote: true do |f| %>
     <%= file_field_tag :file, accept: 'text/csv' %>
     <br>
     <%= submit_tag "Import CSV", class: "btn" %>
   <% end %>
   <br>
-  <%= link_to "Ver arquivo JSON", movies_path, class: "btn-2" %>
+  <%= link_to "Check JSON file", api_v1_movies_path, class: "btn-2" %>
 </div>
 
 <script>
