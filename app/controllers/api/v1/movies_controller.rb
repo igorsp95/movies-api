@@ -3,6 +3,8 @@
 module Api
   module V1
     class MoviesController < ApplicationController
+      skip_before_action :verify_authenticity_token
+
       def index
         filter_message = "/api/v1/movies?country='country' | /api/v1/movies?release_year='release_year' | /api/v1/movies?genre='genre'"
         if params[:release_year].present?
