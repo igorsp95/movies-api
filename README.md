@@ -15,6 +15,8 @@ To run the project:
 
 - Click on 'Check JSON file' to check the api with the new data imported.
 
+You can check the application here: 'https://movies-api-igor-parente.herokuapp.com/'
+
 Endpoints:
 
 - '/': import CSV file (root)
