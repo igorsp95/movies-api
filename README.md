@@ -25,13 +25,13 @@ Endpoints:
 
 Filters:
 
--'/api/v1/movies?release_year=release_year' to filter by year
+- '/api/v1/movies?release_year=release_year' to filter by year
   ex: /api/v1/movies?release_year=2020
 
--'/api/v1/movies?genre=genre' genre filter
+- '/api/v1/movies?genre=genre' genre filter
   ex: /api/v1/movies?genre=tv+show
 
--'/api/v1/movies?country=country' country filter
+- '/api/v1/movies?country=country' country filter
   ex: /api/v1/movies?country=united+states
 
 To test, run 'rake' on terminal.
